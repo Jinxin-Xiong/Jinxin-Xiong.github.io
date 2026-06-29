@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jinxin (Jensen) Xiong — Publications & Patents</title>
+<style>
+  :root{
+    --ink:#1a2026;
+    --ink-soft:#4a5560;
+    --paper:#f6f4ef;
+    --panel:#ffffff;
+    --line:#d9d4ca;
+    --accent:#2d6a5e;
+    --accent-soft:#e4ede9;
+    --grid:#e8e4db;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,serif;
+    background:var(--paper);
+    color:var(--ink);
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:840px;margin:0 auto;padding:0 24px;}
+
+  /* Header */
+  header{
+    background:
+      linear-gradient(rgba(26,32,38,0.02),rgba(26,32,38,0.02)),
+      repeating-linear-gradient(0deg,transparent,transparent 31px,var(--grid) 31px,var(--grid) 32px),
+      repeating-linear-gradient(90deg,transparent,transparent 31px,var(--grid) 31px,var(--grid) 32px),
+      var(--panel);
+    border-bottom:1px solid var(--line);
+  }
+  .header-inner{
+    display:flex;gap:32px;align-items:center;
+    padding:56px 0 48px;flex-wrap:wrap;
+  }
+  .photo{
+    width:128px;height:128px;border-radius:50%;
+    object-fit:cover;flex-shrink:0;
+    border:1px solid var(--line);
+    background:var(--accent-soft);
+    display:flex;align-items:center;justify-content:center;
+    font-size:42px;color:var(--accent);font-weight:600;
+    letter-spacing:1px;
+  }
+  .head-text h1{
+    font-size:34px;font-weight:600;letter-spacing:-0.5px;line-height:1.1;
+  }
+  .head-text .role{
+    font-size:16px;color:var(--accent);margin-top:6px;font-weight:600;
+  }
+  .head-text .affil{
+    font-size:15px;color:var(--ink-soft);margin-top:3px;
+  }
+  .contact{
+    font-family:"SF Mono",ui-monospace,"Cascadia Code",Menlo,monospace;
+    font-size:12.5px;color:var(--ink-soft);margin-top:14px;
+    display:flex;gap:18px;flex-wrap:wrap;
+  }
+  .contact a{color:var(--ink-soft);text-decoration:none;border-bottom:1px solid var(--line);}
+  .contact a:hover{color:var(--accent);border-color:var(--accent);}
+
+  /* Bio */
+  .bio{padding:36px 0 12px;}
+  .bio p{font-size:16.5px;color:var(--ink);max-width:68ch;}
+  .bio p + p{margin-top:14px;}
+
+  /* Sections */
+  section{padding:34px 0;border-top:1px solid var(--line);}
+  .sec-head{
+    display:flex;align-items:baseline;gap:14px;margin-bottom:22px;
+  }
+  .sec-head h2{
+    font-size:13px;font-weight:600;text-transform:uppercase;
+    letter-spacing:2.5px;color:var(--accent);
+    font-family:"SF Mono",ui-monospace,Menlo,monospace;
+  }
+  .sec-head .count{
+    font-family:"SF Mono",ui-monospace,Menlo,monospace;
+    font-size:12px;color:var(--ink-soft);
+  }
+  .rule{flex:1;height:1px;background:var(--line);}
+
+  ol.pubs{list-style:none;counter-reset:pub;}
+  ol.pubs li{
+    counter-increment:pub;
+    position:relative;
+    padding:14px 0 14px 46px;
+    border-bottom:1px solid var(--grid);
+  }
+  ol.pubs li:last-child{border-bottom:none;}
+  ol.pubs li::before{
+    content:counter(pub,decimal-leading-zero);
+    position:absolute;left:0;top:15px;
+    font-family:"SF Mono",ui-monospace,Menlo,monospace;
+    font-size:12px;color:var(--accent);
+    font-weight:600;
+  }
+  .title{font-size:16px;display:block;}
+  .authors{font-size:14.5px;color:var(--ink-soft);display:block;margin-top:2px;}
+  .authors b{color:var(--ink);font-weight:600;}
+  .venue{font-size:14px;color:var(--ink-soft);font-style:italic;display:block;margin-top:2px;}
+  .venue .yr{font-style:normal;font-family:"SF Mono",ui-monospace,Menlo,monospace;font-size:12px;color:var(--accent);margin-right:7px;}
+
+  footer{
+    border-top:1px solid var(--line);
+    padding:28px 0 48px;
+    font-family:"SF Mono",ui-monospace,Menlo,monospace;
+    font-size:12px;color:var(--ink-soft);
+  }
+
+  @media (max-width:560px){
+    .header-inner{padding:40px 0 32px;gap:22px;}
+    .head-text h1{font-size:28px;}
+    .photo{width:96px;height:96px;font-size:32px;}
+    ol.pubs li{padding-left:38px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap header-inner">
+    <div class="photo" id="photo">JX</div>
+    <div class="head-text">
+      <h1>Jinxin (Jensen) Xiong</h1>
+      <div class="role">Ph.D., Photogrammetry &amp; Remote Sensing</div>
+      <div class="affil">Geospatial Machine Learning &amp; 3D Reconstruction · Toronto, Canada</div>
+      <div class="contact">
+        <a href="mailto:jinxinxiong2018@gmail.com">jinxinxiong2018@gmail.com</a>
+        <a href="https://github.com/Jinxin-Xiong">github.com/Jinxin-Xiong</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="bio">
+    <p>I am a geospatial machine learning engineer with a Ph.D. in Photogrammetry and Remote Sensing from Wuhan University and over a decade of industry experience spanning computer vision, 3D reconstruction, and autonomous-driving perception. My work has ranged from satellite and aerial 3D reconstruction to multi-sensor fusion localization, SLAM for AR devices, and large-scale image matching for domestic Chinese satellites.</p>
+    <p>The publications and patents below are from my doctoral research at Wuhan University on satellite and aerial imagery matching, bundle block adjustment, and sensor calibration.</p>
+  </div>
+
+  <section>
+    <div class="sec-head">
+      <h2>Journal Articles</h2>
+      <span class="rule"></span>
+      <span class="count">10</span>
+    </div>
+    <ol class="pubs">
+      <li>
+        <span class="title">An SRTM-Assisted Image Matching Algorithm for Long-strip Satellite Imagery</span>
+        <span class="authors"><b>Jinxin Xiong</b>, Yongjun Zhang, Maoteng Zheng, Yuanxin Ye</span>
+        <span class="venue"><span class="yr">2013</span>Journal of Remote Sensing, 17(5): 1103–1117</span>
+      </li>
+      <li>
+        <span class="title">Photogrammetric Processing of Low-altitude Images Acquired by Unpiloted Aerial Vehicles</span>
+        <span class="authors">Yongjun Zhang, <b>Jinxin Xiong</b>, Lijuan Hao</span>
+        <span class="venue"><span class="yr">2011</span>The Photogrammetric Record, 26(134): 190–211</span>
+      </li>
+      <li>
+        <span class="title">Automatic Matching for Optical Imagery from Domestic Satellites Based on Rigorous Sensor Model</span>
+        <span class="authors">Yongjun Zhang, <b>Jinxin Xiong</b>, Lei Yu, Xiao Ling</span>
+        <span class="venue"><span class="yr">2014</span>Geomatics and Information Science of Wuhan University, 39(8): 897–900</span>
+      </li>
+      <li>
+        <span class="title">Main Error Source of Vertical Parallax and Compensation Regression Model of POS Data</span>
+        <span class="authors">Yongjun Zhang, <b>Jinxin Xiong</b>, Xiaodong Xiong, Jiwei Deng</span>
+        <span class="venue"><span class="yr">2011</span>Acta Geodaetica et Cartographica Sinica, 40(5): 604–609</span>
+      </li>
+      <li>
+        <span class="title">An Image Matching Algorithm Integrating Global SRTM and Image Segmentation for Multi-Source Satellites</span>
+        <span class="authors">Xiao Ling, Yongjun Zhang, <b>Jinxin Xiong</b>, Xu Huang, Zhipeng Chen</span>
+        <span class="venue"><span class="yr">2016</span>Remote Sensing, 672–690</span>
+      </li>
+      <li>
+        <span class="title">Multi-strips Bundle Block Adjustment of ZY-3 Satellite Imagery by Rigorous Sensor Model</span>
+        <span class="authors">Yongjun Zhang, Maoteng Zheng, Xiaodong Xiong, <b>Jinxin Xiong</b></span>
+        <span class="venue"><span class="yr">2015</span>IEEE Geoscience and Remote Sensing Letters, 12(4): 865–869</span>
+      </li>
+      <li>
+        <span class="title">Bundle Block Adjustment of Airborne Three-Line Array Imagery Based on Rotation Angles</span>
+        <span class="authors">Yongjun Zhang, Maoteng Zheng, Xu Huang, <b>Jinxin Xiong</b></span>
+        <span class="venue"><span class="yr">2014</span>Sensors, 14: 8189–8202</span>
+      </li>
+      <li>
+        <span class="title">On-Orbit Geometric Calibration of ZY-3 Three-Line Array Imagery With Multistrip Data Sets</span>
+        <span class="authors">Yongjun Zhang, Maoteng Zheng, <b>Jinxin Xiong</b>, Yihui Lu, Xiaodong Xiong</span>
+        <span class="venue"><span class="yr">2014</span>IEEE Transactions on Geoscience and Remote Sensing, 52(1): 224–234</span>
+      </li>
+      <li>
+        <span class="title">Combined Bundle Block Adjustment with Spaceborne Linear Array and Airborne Frame Array Imagery</span>
+        <span class="authors">Yongjun Zhang, Liwen Lin, Maoteng Zheng, <b>Jinxin Xiong</b></span>
+        <span class="venue"><span class="yr">2013</span>The Photogrammetric Record, 28(145): 162–177</span>
+      </li>
+      <li>
+        <span class="title">Aerial Photographic Route Optimization Based on DEM and Simulated Bundle Adjustment</span>
+        <span class="authors">Yongjun Zhang, Jiwei Deng, <b>Jinxin Xiong</b>, Hongya Zhang</span>
+        <span class="venue"><span class="yr">2010</span>Journal of Geomatics, 35(5): 30–32</span>
+      </li>
+    </ol>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Conference Papers</h2>
+      <span class="rule"></span>
+      <span class="count">2</span>
+    </div>
+    <ol class="pubs">
+      <li>
+        <span class="title">Combined Multi-View Matching Algorithm with Multiple Long-Strip Satellite Imagery from Different Orbits</span>
+        <span class="authors"><b>Jinxin Xiong</b>, Yongjun Zhang</span>
+        <span class="venue"><span class="yr">2012</span>ISPRS 2012 Congress, Melbourne, Australia, 38(B3): 87–92</span>
+      </li>
+      <li>
+        <span class="title">Automatic Processing of Chinese GF-1 Wide Field of View Images</span>
+        <span class="authors">Yongjun Zhang, Yi Wan, Bo Wang, Yifei Kang, <b>Jinxin Xiong</b></span>
+        <span class="venue"><span class="yr">2015</span>36th Int. Symposium on Remote Sensing of Environment, Berlin, Germany, XL-7/W3: 729–734</span>
+      </li>
+    </ol>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Patents</h2>
+      <span class="rule"></span>
+      <span class="count">5</span>
+    </div>
+    <ol class="pubs">
+      <li>
+        <span class="title">Matching of Remote Sensing Images based on Combination of Image Segmentation and Terrain Relief Constraint</span>
+        <span class="authors"><b>Jinxin Xiong</b>, Lei Yu</span>
+      </li>
+      <li>
+        <span class="title">Automatic Multi-orbit Matching Software for Satellite Three-line Array Imagery (CMoMatch-Satellite)</span>
+        <span class="authors">Yongjun Zhang, <b>Jinxin Xiong</b></span>
+      </li>
+      <li>
+        <span class="title">Combined Parallel Matching with Multi-source Strip Imagery of Remote Sensing Satellites</span>
+        <span class="authors">Yongjun Zhang, <b>Jinxin Xiong</b>, Yansong Duan</span>
+      </li>
+      <li>
+        <span class="title">On-Orbit Calibration of Linear Array Sensor of Remote Sensing Satellite with Multi-orbit Datasets</span>
+        <span class="authors">Yongjun Zhang, Maoteng Zheng, <b>Jinxin Xiong</b>, Bo Wang, Xu Huang</span>
+      </li>
+      <li>
+        <span class="title">Position and Attitude Determination for Multiple Remote Sensing Satellites</span>
+        <span class="authors">Yongjun Zhang, Maoteng Zheng, Zuxun Zhang, <b>Jinxin Xiong</b>, Xu Huang</span>
+      </li>
+    </ol>
+  </section>
+
+  <section>
+    <div class="sec-head">
+      <h2>Book</h2>
+      <span class="rule"></span>
+      <span class="count">1</span>
+    </div>
+    <ol class="pubs">
+      <li>
+        <span class="title">Theory and Methods of Visual Inspection with Image Sequences</span>
+        <span class="venue"><span class="yr">—</span>Wuhan University Press · ISBN 978-7-307-06654-0 · 148 pp.</span>
+      </li>
+    </ol>
+  </section>
+
+</main>
+
+<footer class="wrap">
+  Jinxin (Jensen) Xiong · Publications &amp; Patents · Last updated June 2026
+</footer>
+
+</body>
+</html>
